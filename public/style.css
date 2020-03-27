@@ -1,0 +1,17 @@
+h1 {
+    color: blueviolet;
+}
+
+button {
+    background-color: cornflowerblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form * {
+    margin: 0.3rem;
+}
