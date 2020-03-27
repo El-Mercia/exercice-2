@@ -1,7 +1,7 @@
 - [X] Initialiser projet node
 - [X] Initialiser projet git
 - [X] Publication sur github
-- [ ] Installation eslint & configuration
+- [X] Installation eslint & configuration
 - [ ] Installation express & mysql
 - [ ] Création d'une table MySQL -> mettre les commandes de créations dans le projet (fichier .sql) :
     - [ ]Articles
