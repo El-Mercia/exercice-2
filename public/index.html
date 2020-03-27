@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <title>Exercice-3 Creation article</title>
+    <link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+        <h1 >Articles</h1>
+          <form method="POST" action="/api/articles/create">
+              <input
+                type="title"
+                name="title"
+                placeholder="Title here"
+              />
+              <input
+                type="content"
+                name="content"
+                placeholder="Content here"
+              />
+              <input
+                type="author"
+                name="author"
+                placeholder="Author"
+              />
+              <input
+                type="created_at"
+                name="created_at"
+                placeholder="Date creation"
+              />
+              <button type="submit">Create my articles</button>    
+          </form>
+
+        <h1 >Comments</h1>
+
+          <form method="POST" action="/api/comments/create">
+              <input
+                type="article_id"
+                name="article_id"
+                placeholder="Article Id"
+              />
+              <input
+                type="author"
+                name="author"
+                placeholder="Author"
+              />
+              <input
+                type="content"
+                name="content"
+                placeholder="Content here"
+              />
+              <input
+                type="created_at"
+                name="created_at"
+                placeholder="Date creation"
+              />
+              <button type="submit">Submit comments</button>    
+          </form>
+          
+
+	</body>
+</html>

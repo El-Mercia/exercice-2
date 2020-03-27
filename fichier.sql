@@ -1,15 +1,15 @@
 CREATE TABLE node_articles (
-    id INT ,
+    id INT PRIMARY AUTO_INCREMENT,
     title VARCHAR (50) NOT NULL,
     content TEXT NULL,
-    author INT PRIMARY AUTO_INCREMENT?
+    author INT, 
     created_at DATETIME
 );
 
 CREATE TABLE node_comments (
-    id INT,
+    id INT PRIMARY AUTO_INCREMENT,
     article_id INT,
-    author INT PRIMARY AUTO_INCREMENT,
+    author INT,
     content TEXT,
     created_at DATETIME
 );
