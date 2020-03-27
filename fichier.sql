@@ -1,3 +1,5 @@
+/* mysql command for table creation */  
+
 CREATE TABLE node_articles (
     id INT PRIMARY AUTO_INCREMENT,
     title VARCHAR (50) NOT NULL,
