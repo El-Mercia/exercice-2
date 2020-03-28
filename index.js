@@ -58,7 +58,7 @@ app.route("/api/articles/delete")
 
         sqlConnection.query(
             "DELETE FROM node_articles WHERE id = ?",
-            [ req.body.userId ],
+            [ req.body.articlesId ],
             (error, result) => {
                 if (error) {
                     console.log("ERROR :", error.code);
@@ -76,7 +76,7 @@ app.route("/api/articles/delete")
 app.get("/api/comments", (req, res) => {
     const sqlConnection = mysql.createConnection(sqlConfig);
 
-    sqlConnection.query("SELECT id, article_id, author, content, created_at FROM node_comments WHERE id = 1 LIMIT 5", (error, result) => {
+    sqlConnection.query("SELECT id, article_id, author, content, created_at FROM node_comments WHERE id = 16 LIMIT 5", (error, result) => {
         if (error) {
             console.log("ERROR :", error.code);
         } else {
@@ -116,7 +116,7 @@ app.route("/api/comments/delete")
 
         sqlConnection.query(
             "DELETE FROM node_comments WHERE id = ?",
-            [ req.body.userId ],
+            [ req.body.commentsId ],
             (error, result) => {
                 if (error) {
                     console.log("ERROR :", error.code);
