@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <title>Exercire-3 Suppression d'articles et commentaires</title>
+    <link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+        <h1 >Formulaires de suppression d'articles</h1>
+
+          <form method="POST" action="/api/articles/delete">
+              <input
+                type="text"
+                name="articles_id"
+                placeholder="Id article to delete"
+              />
+              <button type="submit">Delete article</button>    
+          </form>
+
+          <form method="POST" action="/api/comments/delete">
+            <input
+              type="text"
+              name="comments_id"
+              placeholder="Id de l'article à supprimer"
+            />
+            <button type="submit">Delete comments</button>    
+        </form>
+
+	</body>
+</html>
