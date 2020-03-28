@@ -12,22 +12,22 @@
         <h1 >Articles</h1>
           <form method="POST" action="/api/articles/create">
               <input
-                type="title"
+                type="text"
                 name="title"
                 placeholder="Title here"
               />
               <input
-                type="content"
+                type="text"
                 name="content"
                 placeholder="Content here"
               />
               <input
-                type="author"
+                type="number"
                 name="author"
                 placeholder="Author"
               />
               <input
-                type="created_at"
+                type="datetime-local"
                 name="created_at"
                 placeholder="Date creation"
               />
@@ -37,22 +37,22 @@
         <h1 >Comments</h1>
           <form method="POST" action="/api/comments/create">
               <input
-                type="article_id"
+                type="number"
                 name="article_id"
                 placeholder="Article Id"
               />
               <input
-                type="author"
+                type="number"
                 name="author"
                 placeholder="Author"
               />
               <input
-                type="content"
+                type="text"
                 name="content"
                 placeholder="Content here"
               />
               <input
-                type="created_at"
+                type="datetime-local"
                 name="created_at"
                 placeholder="Date creation"
               />

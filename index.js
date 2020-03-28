@@ -36,7 +36,7 @@ app.route("/api/articles/create")
         const sqlConnection = mysql.createConnection(sqlConfig);
 
         sqlConnection.query(
-            "INSERT INTO node_articles VALUES (NULL, ?, ?, ?, ?, ?)", 
+            "INSERT INTO node_articles VALUES (NULL, ?, ?, ?, ?)", 
             [req.body.title, req.body.content, req.body.author, req.body.created_at],
             (error, result) => {
                 if (error) {
@@ -94,7 +94,7 @@ app.route("/api/comments/create")
         const sqlConnection = mysql.createConnection(sqlConfig);
 
         sqlConnection.query(
-            "INSERT INTO node_comments VALUES (NULL, ?, ?, ?, ?, ?)", 
+            "INSERT INTO node_comments VALUES (NULL, ?, ?, ?, ?)", 
             [req.body.article_id, req.body.author, req.body.content, req.body.created_at],
             (error, result) => {
                 if (error) {
