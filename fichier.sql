@@ -2,7 +2,7 @@
 
 CREATE TABLE node_articles (
     id INT PRIMARY AUTO_INCREMENT,
-    title VARCHAR (50) NOT NULL,
+    title TEXT (50) NOT NULL,
     content TEXT NULL,
     author INT, 
     created_at DATETIME
