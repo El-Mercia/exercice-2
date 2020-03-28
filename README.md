@@ -4,7 +4,7 @@
 - [X] Installation eslint & configuration
 - [X] Installation express & mysql
 - [X] Création d'une table MySQL -> mettre les commandes de créations dans le projet (fichier .sql) :
-    - [X]Articles
+    - [X] Articles
         - [X] id
         - [X] title
         - [X] content
@@ -14,8 +14,8 @@
         - [X] id
         - [X] article_id (INT)
         - [X] author (INT)
-        - [X]content
-        - [X]created_at (DATETIME)
+        - [X] content
+        - [X] created_at (DATETIME)
  - [X] Création d'un CRD (pas d'Update, on l'a pas vu) node :
     - [X] Route '/api/articles/create' -> permet de créer un article_id
     - [X] Route '/api/articles/delete' -> permet de supprimer un article par son id
