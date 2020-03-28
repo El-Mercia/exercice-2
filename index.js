@@ -76,7 +76,7 @@ app.route("/api/articles/delete")
 app.get("/api/comments", (req, res) => {
     const sqlConnection = mysql.createConnection(sqlConfig);
 
-    sqlConnection.query("SELECT id, article_id, author, content, created_at FROM node_comments WHERE id = 16 LIMIT 5", (error, result) => {
+    sqlConnection.query("SELECT id, article_id, author, content, created_at FROM node_comments WHERE id = 17 LIMIT 5", (error, result) => {
         if (error) {
             console.log("ERROR :", error.code);
         } else {
